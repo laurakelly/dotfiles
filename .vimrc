@@ -3,17 +3,19 @@ syntax on
 filetype plugin indent on
 
 " Appearance
-set guifont=Consolas:h17
-colorscheme blackboard 
+set guifont=InputMono:h12
+set linespace=2
+colorscheme gruvbox
+set background=dark
 
-" Use 4 spaces, no tabs
+" Use 2 spaces, no tabs
 set nu
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " NERDTree settings
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.DS_STORE', '\.git', '\.swp$']
 
 " Enables NERD Commenter
 filetype plugin on
@@ -39,3 +41,8 @@ inoremap <MiddleMouse> <Nop>
 inoremap <2-MiddleMouse> <Nop>
 inoremap <3-MiddleMouse> <Nop>
 inoremap <4-MiddleMouse> <Nop>
+
+" gruvbox color scheme
+if !has("gui_running")
+   let g:gruvbox_italic=0
+endif

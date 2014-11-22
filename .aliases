@@ -1,0 +1,5 @@
+alias mvim='mvim -v'
+
+alias server="python -m SimpleHTTPServer"
+
+alias rails="bundle exec rails s"
